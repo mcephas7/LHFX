@@ -20,16 +20,17 @@ LHFX Linux-Hadoop Forensics Extractor (GUI) — evidence kickstart for Linux-Had
 Version: 3.6.3
 
 Design goals:
-- Investigator-first UX: wizard-like flow, clear guidance, copy/paste commands, non-technical friendly.
-- Works on mounted images (manual mount or auto-mount via loop device), read-only.
-- Broad Linux + Hadoop + ecosystem artefact discovery (generic signatures + container storage).
-- Robust error handling: PermissionError/EIO safe traversal; never crash on unreadable dirs.
+- Investigator-first UX: wizard-like flow, clear guidance, and copy/paste-ready terminal instructions (beginner-friendly).
+- Read-only operation on forensic images: supports either a user-provided mounted root (manual mount) or tool-assisted auto-mount via loop device (sudo required for auto-mount).
+- Broad Linux + Hadoop + ecosystem artefact discovery (generic signatures + container storage awareness).
+- Robust error handling: PermissionError/EIO-safe traversal; continues safely when encountering unreadable files/directories.
 - Strong logging: console + log file + run summary + warnings + suggested remediation.
-- Hashing: choose algorithm OR proceed without hashing (with caution message).
+- Integrity support: optional hashing (user-selected algorithm) or proceed without hashing (with explicit caution message).
 
-Forensic note:
-- This tool does not silently auto-install dependencies. It detects missing commands and provides copy/paste install guidance.
-  An optional, investigator-initiated “Prepare Dependencies” action is available for Kali/Debian-family systems when running with sudo, providing guided installation of required forensic utilities.
+Forensic note on external utilities:
+- LHFX relies on standard Linux system utilities (e.g., losetup, mount, lsblk, blkid, fdisk, blockdev, file, dmesg).
+- LHFX does not silently install software on a forensic workstation. If required utilities are missing, it reports what is missing and provides copy/paste installation commands.
+- An optional, investigator-initiated “Prepare Dependencies” action is available for Kali/Debian-family systems when running with sudo, offering guided installation of the required utilities.
 """
 
 
