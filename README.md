@@ -257,7 +257,7 @@ The tool then:
 
 •	Mounts the image read-only
 
-* Verifies image integrity
+•	Verifies image integrity
 
 •	Discovers artefacts
 
