@@ -227,7 +227,7 @@ LHFX is designed to maintain forensic soundness:
 
 •	Optional cryptographic hashing
 
-•	No modification of evidence source
+•	No modification of the evidence source
 
 •	Full command logging
 
@@ -257,7 +257,7 @@ The tool then:
 
 •	Mounts the image read-only
 
-*  	Verifies image integrity
+* Verifies image integrity
 
 •	Discovers artefacts
 
