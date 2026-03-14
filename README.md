@@ -1,6 +1,7 @@
 LHFX – Linux–Hadoop Forensics Extractor
 
 A NameNode-centric digital forensic support tool for Linux-Hadoop Big-Data environments.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19025819.svg)](https://doi.org/10.5281/zenodo.19025819)
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
